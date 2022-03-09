@@ -19,6 +19,9 @@ sc_3=".import $FOLDER/$FILE $TABLE_NAME"
 SQLite_STRING="$sc_1 \n$sc_2 \n$sc_3\n"
 # echo -e $SQLite_STRING
 # printf '%s\n%s\n%s' $sc_1 $sc_2 $sc_3
+
+showStep "$RED Not currently implemented"
+exit -1
 sqlite3 $COLLECTION  <<< $( echo -e $SQLite_STRING )
 sqlite3 .open" $COLLECTION"
 sqlite3 .mode "$FILEFORMAT  $TABLE_NAME"
