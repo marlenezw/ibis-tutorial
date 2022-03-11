@@ -1,0 +1,205 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red222\green68\blue70;\red255\green255\blue255;\red0\green0\blue0;
+\red19\green149\blue63;\red81\green187\blue188;\red13\green99\blue29;\red29\green120\blue250;}
+{\*\expandedcolortbl;;\cssrgb\c90588\c36078\c34510;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c0\c63529\c31373;\cssrgb\c37647\c77647\c78431;\cssrgb\c0\c45490\c15294;\cssrgb\c12549\c56078\c98431;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+---------------------------------------------------------------------------\cf0 \
+\cf2 IbisError\cf0                                  Traceback (most recent call last)\
+\pard\pardeftab720\partightenfactor0
+\cf5 /var/folders/gn/cn8xc22s4cl8yjmqnmgvsfzw0000gn/T/ipykernel_18412/3496578676.py\cf0  in \cf6 <module>\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7      10
+\f0\b0 \cf0      predicates=artists_at_portrero["artist"] == artist_number_of_displays["artist"])\
+
+\f1\b \cf7      11
+\f0\b0 \cf0  \
+\pard\pardeftab720\partightenfactor0
+\cf5 ---> 12\cf2  \cf0 most_popular_artist \cf8 =\cf0  most_popular_artist\cf8 ["artist_x",\cf0  \cf8 "display_title"]\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7      13
+\f0\b0 \cf0  \
+
+\f1\b \cf7      14
+\f0\b0 \cf0  most_popular_artist\cf8 .\cf0 sort_by\cf8 (\cf0 ibis\cf8 .\cf0 desc\cf8 (\cf0 most_popular_artist\cf8 .\cf0 display_title\cf8 ))\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 __getitem__\cf8 (self, what)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     474
+\f0\b0 \cf0              \cf5 return\cf0  self\cf8 .\cf0 limit\cf8 (\cf0 stop \cf8 -\cf0  start\cf8 ,\cf0  offset\cf8 =\cf0 start\cf8 )\cf0 \
+
+\f1\b \cf7     475
+\f0\b0 \cf0  \
+\pard\pardeftab720\partightenfactor0
+\cf5 --> 476\cf2          \cf0 what \cf8 =\cf0  bind_expr\cf8 (\cf0 self\cf8 ,\cf0  what\cf8 )\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     477
+\f0\b0 \cf0  \
+
+\f1\b \cf7     478
+\f0\b0 \cf0          \cf5 if\cf0  isinstance\cf8 (\cf0 what\cf8 ,\cf0  AnalyticExpr\cf8 ):\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 bind_expr\cf8 (table, expr)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1149
+\f0\b0 \cf0  \cf5 def\cf0  bind_expr\cf8 (\cf0 table\cf8 ,\cf0  expr\cf8 ):\cf0 \
+
+\f1\b \cf7    1150
+\f0\b0 \cf0      \cf5 if\cf0  isinstance\cf8 (\cf0 expr\cf8 ,\cf0  \cf8 (\cf0 list\cf8 ,\cf0  tuple\cf8 )):\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf5 -> 1151\cf2          \cf5 return\cf0  \cf8 [\cf0 bind_expr\cf8 (\cf0 table\cf8 ,\cf0  x\cf8 )\cf0  \cf5 for\cf0  x \cf5 in\cf0  expr\cf8 ]\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1152
+\f0\b0 \cf0  \
+
+\f1\b \cf7    1153
+\f0\b0 \cf0      \cf5 return\cf0  table\cf8 .\cf0 _ensure_expr\cf8 (\cf0 expr\cf8 )\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 <listcomp>\cf8 (.0)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1149
+\f0\b0 \cf0  \cf5 def\cf0  bind_expr\cf8 (\cf0 table\cf8 ,\cf0  expr\cf8 ):\cf0 \
+
+\f1\b \cf7    1150
+\f0\b0 \cf0      \cf5 if\cf0  isinstance\cf8 (\cf0 expr\cf8 ,\cf0  \cf8 (\cf0 list\cf8 ,\cf0  tuple\cf8 )):\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf5 -> 1151\cf2          \cf5 return\cf0  \cf8 [\cf0 bind_expr\cf8 (\cf0 table\cf8 ,\cf0  x\cf8 )\cf0  \cf5 for\cf0  x \cf5 in\cf0  expr\cf8 ]\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1152
+\f0\b0 \cf0  \
+
+\f1\b \cf7    1153
+\f0\b0 \cf0      \cf5 return\cf0  table\cf8 .\cf0 _ensure_expr\cf8 (\cf0 expr\cf8 )\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 bind_expr\cf8 (table, expr)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1151
+\f0\b0 \cf0          \cf5 return\cf0  \cf8 [\cf0 bind_expr\cf8 (\cf0 table\cf8 ,\cf0  x\cf8 )\cf0  \cf5 for\cf0  x \cf5 in\cf0  expr\cf8 ]\cf0 \
+
+\f1\b \cf7    1152
+\f0\b0 \cf0  \
+\pard\pardeftab720\partightenfactor0
+\cf5 -> 1153\cf2      \cf5 return\cf0  table\cf8 .\cf0 _ensure_expr\cf8 (\cf0 expr\cf8 )\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7    1154
+\f0\b0 \cf0  \
+
+\f1\b \cf7    1155
+\f0\b0 \cf0  \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 _ensure_expr\cf8 (self, expr)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     526
+\f0\b0 \cf0      \cf5 def\cf0  _ensure_expr\cf8 (\cf0 self\cf8 ,\cf0  expr\cf8 ):\cf0 \
+
+\f1\b \cf7     527
+\f0\b0 \cf0          \cf5 if\cf0  isinstance\cf8 (\cf0 expr\cf8 ,\cf0  str\cf8 ):\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf5 --> 528\cf2              \cf5 return\cf0  self\cf8 [\cf0 expr\cf8 ]\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     529
+\f0\b0 \cf0          \cf5 elif\cf0  isinstance\cf8 (\cf0 expr\cf8 ,\cf0  \cf8 (\cf0 int\cf8 ,\cf0  np\cf8 .\cf0 integer\cf8 )):\cf0 \
+
+\f1\b \cf7     530
+\f0\b0 \cf0              \cf5 return\cf0  self\cf8 [\cf0 self\cf8 .\cf0 schema\cf8 ().\cf0 name_at_position\cf8 (\cf0 expr\cf8 )]\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 __getitem__\cf8 (self, what)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     457
+\f0\b0 \cf0      \cf5 def\cf0  __getitem__\cf8 (\cf0 self\cf8 ,\cf0  what\cf8 ):\cf0 \
+
+\f1\b \cf7     458
+\f0\b0 \cf0          \cf5 if\cf0  isinstance\cf8 (\cf0 what\cf8 ,\cf0  \cf8 (\cf0 str\cf8 ,\cf0  int\cf8 )):\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf5 --> 459\cf2              \cf5 return\cf0  self\cf8 .\cf0 get_column\cf8 (\cf0 what\cf8 )\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     460
+\f0\b0 \cf0  \
+
+\f1\b \cf7     461
+\f0\b0 \cf0          \cf5 if\cf0  isinstance\cf8 (\cf0 what\cf8 ,\cf0  slice\cf8 ):\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 get_column\cf8 (self, name)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     571
+\f0\b0 \cf0          \cf5 import\cf0  ibis\cf8 .\cf0 expr\cf8 .\cf0 operations \cf5 as\cf0  ops\
+
+\f1\b \cf7     572
+\f0\b0 \cf0  \
+\pard\pardeftab720\partightenfactor0
+\cf5 --> 573\cf2          \cf0 ref \cf8 =\cf0  ops\cf8 .\cf0 TableColumn\cf8 (\cf0 self\cf8 ,\cf0  name\cf8 )\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     574
+\f0\b0 \cf0          \cf5 return\cf0  ref\cf8 .\cf0 to_expr\cf8 ()\cf0 \
+
+\f1\b \cf7     575
+\f0\b0 \cf0  \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/operations/generic.py\cf0  in \cf6 __init__\cf8 (self, *args, **kwargs)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7      42
+\f0\b0 \cf0          table \cf8 =\cf0  self\cf8 .\cf0 table\
+
+\f1\b \cf7      43
+\f0\b0 \cf0  \
+\pard\pardeftab720\partightenfactor0
+\cf5 ---> 44\cf2          \cf0 schema \cf8 =\cf0  table\cf8 .\cf0 schema\cf8 ()\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7      45
+\f0\b0 \cf0  \
+
+\f1\b \cf7      46
+\f0\b0 \cf0          \cf5 if\cf0  isinstance\cf8 (\cf0 name\cf8 ,\cf0  int\cf8 ):\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 /opt/anaconda3/lib/python3.9/site-packages/ibis/expr/types.py\cf0  in \cf6 schema\cf8 (self)\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     587
+\f0\b0 \cf0          """\
+
+\f1\b \cf7     588
+\f0\b0 \cf0          \cf5 if\cf0  \cf5 not\cf0  self\cf8 .\cf0 _is_materialized\cf8 ():\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf5 --> 589\cf2              \cf5 raise\cf0  com\cf8 .\cf0 IbisError\cf8 ('Table operation is not yet materialized')\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf7     590
+\f0\b0 \cf0          \cf5 return\cf0  self\cf8 .\cf0 op\cf8 ().\cf0 schema\
+
+\f1\b \cf7     591
+\f0\b0 \cf0  \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 IbisError\cf0 : Table operation is not yet materialized}
